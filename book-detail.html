@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Silent Echo - BookHaven</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <nav class="main-nav">
+        <div class="nav-container">
+            <div class="logo">BookHaven</div>
+            <div class="menu-icon" id="menuToggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="books.html">Books</a></li>
+                <li><a href="cart.html">Cart</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="book-detail">
+        <div class="container">
+            <div class="book-detail-content">
+                <div class="book-image">
+                    <img src="https://images.unsplash.com/photo-1544947950-fa07a98d237f?w=500&auto=format" alt="The Silent Echo">
+                </div>
+                <div class="book-info">
+                    <div class="book-header">
+                        <span class="format-label">Hardcover</span>
+                        <div class="rating">
+                            ★★★★☆ <span class="rating-count">(128 reviews)</span>
+                        </div>
+                    </div>
+                    <h1>The Silent Echo</h1>
+                    <div class="price-quantity">
+                        <p class="price">$24.99</p>
+                        <div class="quantity-selector">
+                            <button class="quantity-btn">-</button>
+                            <input type="number" value="1" min="1" class="quantity-input">
+                            <button class="quantity-btn">+</button>
+                        </div>
+                    </div>
+                    <div class="book-actions">
+                        <button class="cta-button">Add to Cart</button>
+                        <button class="favorite-button">
+                            <i class="far fa-heart"></i> Add to Favorites
+                        </button>
+                    </div>
+                    <div class="metadata-grid">
+                        <div class="meta-item">
+                            <span class="meta-label">ISBN:</span>
+                            <span class="meta-value">978-3-16-148410-0</span>
+                        </div>
+                        <div class="meta-item">
+                            <span class="meta-label">Published:</span>
+                            <span class="meta-value">March 2024</span>
+                        </div>
+                        <div class="meta-item">
+                            <span class="meta-label">Pages:</span>
+                            <span class="meta-value">432 pages</span>
+                        </div>
+                        <div class="meta-item">
+                            <span class="meta-label">Language:</span>
+                            <span class="meta-value">English</span>
+                        </div>
+                    </div>
+                    <div class="content-sections">
+                        <div class="description-section">
+                            <h2 class="section-header">Description</h2>
+                            <div class="section-content">
+                                <p class="description">
+                                    A captivating story of mystery and intrigue that follows the journey of a young detective 
+                                    as she unravels a decades-old mystery in a small coastal town. This gripping narrative 
+                                    combines elements of suspense, romance, and historical fiction.
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="details-section">
+                            <h2 class="section-header">Details</h2>
+                            <div class="section-content">
+                                <div class="detail-item">
+                                    <span class="detail-label">Publisher:</span>
+                                    <span class="detail-value">Haven Publications</span>
+                                </div>
+                                <div class="detail-item">
+                                    <span class="detail-label">Dimensions:</span>
+                                    <span class="detail-value">6 x 1.2 x 9 inches</span>
+                                </div>
+                                <div class="detail-item">
+                                    <span class="detail-label">Weight:</span>
+                                    <span class="detail-value">1.2 pounds</span>
+                                </div>
+                                <div class="detail-item">
+                                    <span class="detail-label">ISBN:</span>
+                                    <span class="detail-value">978-3-16-148410-0</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>BookHaven</h3>
+                    <p>Your Literary Paradise</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <p>Email: info@bookhaven.com</p>
+                    <p>Phone: +21658150574</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Follow Us</h3>
+                    <div class="social-links">
+                        <a href="#">Facebook</a>
+                        <a href="#">Twitter</a>
+                        <a href="#">Instagram</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 BookHaven. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Navigation Toggle
+        const menuToggle = document.getElementById('menuToggle');
+        const navLinks = document.getElementById('navLinks');
+
+        menuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            const icon = menuToggle.querySelector('i');
+            icon.classList.toggle('fa-bars');
+            icon.classList.toggle('fa-times');
+        });
+
+        // Close menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!menuToggle.contains(e.target) && !navLinks.contains(e.target)) {
+                navLinks.classList.remove('active');
+                const icon = menuToggle.querySelector('i');
+                icon.classList.replace('fa-times', 'fa-bars');
+            }
+        });
+    </script>
+</body>
+</html>

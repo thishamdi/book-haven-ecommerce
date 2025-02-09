@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Books - BookHaven</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <nav class="main-nav">
+        <div class="nav-container">
+            <div class="logo">BookHaven</div>
+            <div class="menu-icon" id="menuToggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="books.html" class="active">Books</a></li>
+                <li><a href="cart.html">Cart</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="books-page">
+        <div class="container">
+            <h1>Our Collection</h1>
+            <div class="books-controls">
+                <div class="search-bar">
+                    <input type="text" id="bookSearch" placeholder="Search books...">
+                    <i class="fas fa-search"></i>
+                </div>
+                
+                <div class="filters">
+                    <div class="filter-group">
+                        <label>Genre:</label>
+                        <select id="genreFilter">
+                            <option value="">All</option>
+                            <option>Fiction</option>
+                            <option>Non-Fiction</option>
+                            <option>Science Fiction</option>
+                            <option>Fantasy</option>
+                            <option>Mystery</option>
+                            <option>Romance</option>
+                            <option>Historical</option>
+                        </select>
+                    </div>
+                    
+                    <div class="filter-group">
+                        <label>Price:</label>
+                        <select id="priceFilter">
+                            <option value="">All</option>
+                            <option value="0-15">Under $15</option>
+                            <option value="15-25">$15 - $25</option>
+                            <option value="25-35">$25 - $35</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="book-grid">
+                <!-- To Kill a Mockingbird -->
+                <div class="book-card" data-genre="Fiction" data-price="18.99">
+                    <img src="https://m.media-amazon.com/images/I/51IXWZzlgSL._SY445_SX342_.jpg" alt="To Kill a Mockingbird">
+                    <h3>To Kill a Mockingbird</h3>
+                    <p class="author">Harper Lee</p>
+                    <div class="book-details">
+                        <span class="price">$18.99</span>
+                        <a href="book-detail.html" class="button">View Details</a>
+                    </div>
+                </div>
+
+                <!-- 1984 -->
+                <div class="book-card" data-genre="Science Fiction" data-price="14.95">
+                    <img src="https://m.media-amazon.com/images/I/71kxa1-0mfL._SY466_.jpg" alt="1984">
+                    <h3>1984</h3>
+                    <p class="author">George Orwell</p>
+                    <div class="book-details">
+                        <span class="price">$14.95</span>
+                        <a href="book-detail.html" class="button">View Details</a>
+                    </div>
+                </div>
+
+                <!-- The Great Gatsby -->
+                <div class="book-card" data-genre="Fiction" data-price="16.50">
+                    <img src="https://m.media-amazon.com/images/I/71FTb9X6wsL._SY466_.jpg" alt="The Great Gatsby">
+                    <h3>The Great Gatsby</h3>
+                    <p class="author">F. Scott Fitzgerald</p>
+                    <div class="book-details">
+                        <span class="price">$16.50</span>
+                        <a href="book-detail.html" class="button">View Details</a>
+                    </div>
+                </div>
+
+                <!-- Pride and Prejudice -->
+                <div class="book-card" data-genre="Romance" data-price="12.99">
+                    <img src="https://goodandbeautifulbooklist.com/wp-content/uploads/2021/09/Pride-and-Prejudice-Cover-Amazon-Front.jpg" alt="Pride and Prejudice">
+                    <h3>Pride and Prejudice</h3>
+                    <p class="author">Jane Austen</p>
+                    <div class="book-details">
+                        <span class="price">$12.99</span>
+                        <a href="book-detail.html" class="button">View Details</a>
+                    </div>
+                </div>
+
+                <!-- The Hobbit -->
+                <div class="book-card" data-genre="Fantasy" data-price="22.00">
+                    <img src="https://m.media-amazon.com/images/I/710+HcoP38L._SY466_.jpg" alt="The Hobbit">
+                    <h3>The Hobbit</h3>
+                    <p class="author">J.R.R. Tolkien</p>
+                    <div class="book-details">
+                        <span class="price">$22.00</span>
+                        <a href="book-detail.html" class="button">View Details</a>
+                    </div>
+                </div>
+
+                <!-- The Catcher in the Rye -->
+                <div class="book-card" data-genre="Fiction" data-price="15.75">
+                    <img src="https://m.media-amazon.com/images/I/91HPG31dTwL._SY466_.jpg" alt="The Catcher in the Rye">
+                    <h3>The Catcher in the Rye</h3>
+                    <p class="author">J.D. Salinger</p>
+                    <div class="book-details">
+                        <span class="price">$15.75</span>
+                        <a href="book-detail.html" class="button">View Details</a>
+                    </div>
+                </div>
+
+                <!-- Brave New World -->
+                <div class="book-card" data-genre="Science Fiction" data-price="13.99">
+                    <img src="https://m.media-amazon.com/images/I/81zE42gT3xL._SY466_.jpg" alt="Brave New World">
+                    <h3>Brave New World</h3>
+                    <p class="author">Aldous Huxley</p>
+                    <div class="book-details">
+                        <span class="price">$13.99</span>
+                        <a href="book-detail.html" class="button">View Details</a>
+                    </div>
+                </div>
+
+                <!-- The Alchemist -->
+                <div class="book-card" data-genre="Fiction" data-price="17.25">
+                    <img src="https://m.media-amazon.com/images/I/71aFt4+OTOL._SY466_.jpg" alt="The Alchemist">
+                    <h3>The Alchemist</h3>
+                    <p class="author">Paulo Coelho</p>
+                    <div class="book-details">
+                        <span class="price">$17.25</span>
+                        <a href="book-detail.html" class="button">View Details</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>BookHaven</h3>
+                    <p>Your Literary Paradise</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <p>Email: info@bookhaven.com</p>
+                    <p>Phone: +21658150574</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Follow Us</h3>
+                    <div class="social-links">
+                        <a href="#">Facebook</a>
+                        <a href="#">Twitter</a>
+                        <a href="#">Instagram</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 BookHaven. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Navigation Toggle
+        const menuToggle = document.getElementById('menuToggle');
+        const navLinks = document.getElementById('navLinks');
+
+        menuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            const icon = menuToggle.querySelector('i');
+            icon.classList.toggle('fa-bars');
+            icon.classList.toggle('fa-times');
+        });
+
+        // Close menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!menuToggle.contains(e.target) && !navLinks.contains(e.target)) {
+                navLinks.classList.remove('active');
+                const icon = menuToggle.querySelector('i');
+                icon.classList.replace('fa-times', 'fa-bars');
+            }
+        });
+
+        // Filtering functionality
+        const searchInput = document.getElementById('bookSearch');
+        const genreFilter = document.getElementById('genreFilter');
+        const priceFilter = document.getElementById('priceFilter');
+        const bookCards = document.querySelectorAll('.book-card');
+
+        function filterBooks() {
+            const searchTerm = searchInput.value.toLowerCase();
+            const selectedGenre = genreFilter.value;
+            const priceRange = priceFilter.value.split('-');
+
+            bookCards.forEach(card => {
+                const title = card.querySelector('h3').textContent.toLowerCase();
+                const genre = card.dataset.genre;
+                const price = parseFloat(card.dataset.price);
+
+                const matchesSearch = title.includes(searchTerm);
+                const matchesGenre = !selectedGenre || genre === selectedGenre;
+                const matchesPrice = !priceRange[0] || 
+                    (price >= (priceRange[0] || 0) && price <= (priceRange[1] || Infinity));
+
+                card.style.display = (matchesSearch && matchesGenre && matchesPrice) 
+                    ? 'block' 
+                    : 'none';
+            });
+        }
+
+        // Add event listeners
+        [searchInput, genreFilter, priceFilter].forEach(element => {
+            element.addEventListener('input', filterBooks);
+        });
+    </script>
+</body>
+</html>

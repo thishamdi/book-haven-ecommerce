@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookHaven - Your Literary Paradise</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <nav class="main-nav">
+        <div class="nav-container">
+            <a href="index.html" class="logo">BookHaven</a>
+            <div class="menu-icon" id="menuToggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="books.html">Books</a></li>
+                <li><a href="cart.html">Cart</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Welcome to BookHaven</h1>
+            <p>Discover your next literary adventure</p>
+            <a href="books.html" class="cta-button">Explore Books</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="categories">
+            <div class="container">
+                <h2 class="section-title">Explore Categories</h2>
+                <div class="category-grid">
+                    <div class="category-card">
+                        <div class="category-image-container">
+                            <img src="https://images.unsplash.com/photo-1589998059171-988d887df646?w=500&auto=format" 
+                                 alt="Fantasy" 
+                                 class="category-image">
+                            <div class="category-overlay">
+                                <h3>Fantasy & Magic</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="category-card">
+                        <div class="category-image-container">
+                            <img src="https://images.unsplash.com/photo-1543002588-bfa74002ed7e?w=500&auto=format" 
+                                 alt="Science Fiction" 
+                                 class="category-image">
+                            <div class="category-overlay">
+                                <h3>Science Fiction</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="category-card">
+                        <div class="category-image-container">
+                            <img src="https://images.unsplash.com/photo-1532012197267-da84d127e765?w=500&auto=format" 
+                                 alt="Romance" 
+                                 class="category-image">
+                            <div class="category-overlay">
+                                <h3>Romance</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="category-card">
+                        <div class="category-image-container">
+                            <img src="https://images.unsplash.com/photo-1532012197267-da84d127e765?w=500&auto=format" 
+                                 alt="Mystery" 
+                                 class="category-image">
+                            <div class="category-overlay">
+                                <h3>Mystery</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="featured-books">
+            <div class="container">
+                <h2 class="section-title">Featured Books</h2>
+                <div class="book-grid">
+                    <div class="book-card" data-genre="Fiction" data-price="16.50">
+                        <img src="https://m.media-amazon.com/images/I/71FTb9X6wsL._SY466_.jpg" alt="The Great Gatsby">
+                        <h3>The Great Gatsby</h3>
+                        <p class="author">F. Scott Fitzgerald</p>
+                        <div class="book-details">
+                            <span class="price">$16.50</span>
+                            <a href="book-detail.html" class="button">View Details</a>
+                        </div>
+                    </div>
+                    <div class="book-card" data-genre="Science Fiction" data-price="14.95">
+                        <img src="https://m.media-amazon.com/images/I/71kxa1-0mfL._SY466_.jpg" alt="1984">
+                        <h3>1984</h3>
+                        <p class="author">George Orwell</p>
+                        <div class="book-details">
+                            <span class="price">$14.95</span>
+                            <a href="book-detail.html" class="button">View Details</a>
+                        </div>
+                    </div>
+                    <div class="book-card" data-genre="Romance" data-price="12.99">
+                        <img src="https://rukminim2.flixcart.com/image/850/1000/kkec4280/book/d/h/d/pride-prejudice-original-imafzra6pfewjjwb.jpeg?q=20&crop=false" alt="Pride and Prejudice">
+                        <h3>Pride and Prejudice</h3>
+                        <p class="author">Jane Austen</p>
+                        <div class="book-details">
+                            <span class="price">$12.99</span>
+                            <a href="book-detail.html" class="button">View Details</a>
+                        </div>
+                    </div>
+                    <div class="book-card" data-genre="Fantasy" data-price="22.00">
+                        <img src="https://m.media-amazon.com/images/I/710+HcoP38L._SY466_.jpg" alt="The Hobbit">
+                        <h3>The Hobbit</h3>
+                        <p class="author">J.R.R. Tolkien</p>
+                        <div class="book-details">
+                            <span class="price">$22.00</span>
+                            <a href="book-detail.html" class="button">View Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="new-arrivals">
+            <div class="container">
+                <h2 class="section-title">New Arrivals</h2>
+                <div class="book-grid">
+                    <div class="book-card" data-genre="Fiction" data-price="19.99">
+                        <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1582135294i/36809135.jpg" alt="Where the Crawdads Sing">
+                        <h3>Where the Crawdads Sing</h3>
+                        <p class="author">Delia Owens</p>
+                        <div class="book-details">
+                            <span class="price">$19.99</span>
+                            <a href="book-detail.html" class="button">View Details</a>
+                        </div>
+                    </div>
+                    <div class="book-card" data-genre="Fantasy" data-price="17.50">
+                        <img src="https://m.media-amazon.com/images/I/81WZ6QvGZ2L._SY466_.jpg" alt="The Midnight Library">
+                        <h3>The Midnight Library</h3>
+                        <p class="author">Matt Haig</p>
+                        <div class="book-details">
+                            <span class="price">$17.50</span>
+                            <a href="book-detail.html" class="button">View Details</a>
+                        </div>
+                    </div>
+                    <div class="book-card" data-genre="Non-Fiction" data-price="14.99">
+                        <img src="https://m.media-amazon.com/images/I/51B7kuFwQFL._SY445_SX342_.jpg" alt="Atomic Habits">
+                        <h3>Atomic Habits</h3>
+                        <p class="author">James Clear</p>
+                        <div class="book-details">
+                            <span class="price">$14.99</span>
+                            <a href="book-detail.html" class="button">View Details</a>
+                        </div>
+                    </div>
+                    <div class="book-card" data-genre="Historical" data-price="18.25">
+                        <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1577090827l/51791252.jpg" alt="The Vanishing Half">
+                        <h3>The Vanishing Half</h3>
+                        <p class="author">Brit Bennett</p>
+                        <div class="book-details">
+                            <span class="price">$18.25</span>
+                            <a href="book-detail.html" class="button">View Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="author-spotlight">
+            <div class="container">
+                <h2 class="section-title">Author Spotlight</h2>
+                <div class="author-grid">
+                    <!-- Margaret Atwood -->
+                    <div class="author-card">
+                        <div class="author-image">
+                            <img src="https://cdn.britannica.com/88/207888-050-9B3C1774/Margaret-Atwood-2018.jpg" alt="Margaret Atwood">
+                        </div>
+                        <div class="author-info">
+                            <h3>Margaret Atwood</h3>
+                            <p class="genre">Speculative Fiction</p>
+                            <p class="author-bio">Award-winning author of The Handmaid's Tale. Explorer of dystopian worlds and feminist themes.</p>
+                            <a href="#" class="author-link">View Works →</a>
+                        </div>
+                    </div>
+
+                    <!-- Neil Gaiman -->
+                    <div class="author-card">
+                        <div class="author-image">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Kyle-cassidy-neil-gaiman-April-2013.jpg/640px-Kyle-cassidy-neil-gaiman-April-2013.jpg" alt="Neil Gaiman">
+                        </div>
+                        <div class="author-info">
+                            <h3>Neil Gaiman</h3>
+                            <p class="genre">Fantasy</p>
+                            <p class="author-bio">Master of modern mythology and creator of the American Gods universe.</p>
+                            <a href="#" class="author-link">View Works →</a>
+                        </div>
+                    </div>
+
+                    <!-- Chimamanda Ngozi -->
+                    <div class="author-card">
+                        <div class="author-image">
+                            <img src="https://www.chimamanda.com/wp-content/uploads/2021/10/CNA-01.jpg" alt="Chimamanda Ngozi">
+                        </div>
+                        <div class="author-info">
+                            <h3>Chimamanda Ngozi</h3>
+                            <p class="genre">Literary Fiction</p>
+                            <p class="author-bio">Powerful storyteller exploring cultural identity and postcolonial themes.</p>
+                            <a href="#" class="author-link">View Works →</a>
+                        </div>
+                    </div>
+
+                    <!-- Haruki Murakami -->
+                    <div class="author-card">
+                        <div class="author-image">
+                            <img src="https://cdn.britannica.com/20/195620-050-9379EDA9/Murakami-Haruki-2012.jpg" alt="Haruki Murakami">
+                        </div>
+                        <div class="author-info">
+                            <h3>Haruki Murakami</h3>
+                            <p class="genre">Magical Realism</p>
+                            <p class="author-bio">Surrealist writer blending reality and fantasy in mesmerizing narratives.</p>
+                            <a href="#" class="author-link">View Works →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="special-offers">
+            <div class="container">
+                <h2 class="section-title">Special Offers</h2>
+                <div class="offer-grid">
+                    <div class="offer-card">
+                        <div class="offer-badge">30% OFF</div>
+                        <img src="https://meteamedia.org/wp-content/uploads/2022/04/BE5C9D4C-83F5-4421-A92C-B1278F96F1C4-900x600.jpeg" alt="Book Bundle">
+                        <div class="offer-details">
+                            <h3>Classic Novels Bundle</h3>
+                            <p class="offer-price">$49.99 <span class="original-price">$69.99</span></p>
+                            <a href="#" class="button">Get Offer</a>
+                        </div>
+                    </div>
+                    
+                    <div class="offer-card">
+                        <div class="offer-badge">BOGO</div>
+                        <img src="https://img.buzzfeed.com/buzzfeed-static/static/2017-10/3/5/campaign_images/buzzfeed-prod-fastlane-02/22-classic-novels-that-wont-bore-you-to-death-2-4084-1507024548-3_dblbig.jpg?resize=1200:*" alt="Romance Books">
+                        <div class="offer-details">
+                            <h3>Buy 1 Get 1 Free</h3>
+                            <p class="offer-desc">On Selected Romance Titles</p>
+                            <a href="#" class="button">Shop Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>BookHaven</h3>
+                    <p>Your Literary Paradise</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <p>Email: info@bookhaven.com</p>
+                    <p>Phone: +21658150574</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Follow Us</h3>
+                    <div class="social-links">
+                        <a href="#">Facebook</a>
+                        <a href="#">Twitter</a>
+                        <a href="#">Instagram</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 BookHaven. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Navigation Toggle
+        const menuToggle = document.getElementById('menuToggle');
+        const navLinks = document.getElementById('navLinks');
+
+        menuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            const icon = menuToggle.querySelector('i');
+            icon.classList.toggle('fa-bars');
+            icon.classList.toggle('fa-times');
+        });
+
+        // Close menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!menuToggle.contains(e.target) && !navLinks.contains(e.target)) {
+                navLinks.classList.remove('active');
+                const icon = menuToggle.querySelector('i');
+                icon.classList.replace('fa-times', 'fa-bars');
+            }
+        });
+    </script>
+</body>
+</html>
